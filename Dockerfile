@@ -1,6 +1,7 @@
-FROM registry.redhat.io/openshift4/ose-jenkins-agent-base:v4.5.0
+#FROM registry.redhat.io/openshift4/ose-jenkins-agent-base:v4.5.0
 #FROM quay.io/openshift/origin-jenkins-agent-base:v4.0
 #FROM registry.svc.ci.openshift.org/ocp/4.6:jenkins-agent-base
+FROM openshift/jenkins-slave-base-centos7:latest
 
 ENV SOAPUI_VERSION=5.6.0
 RUN echo $SOAPUI_VERSION
